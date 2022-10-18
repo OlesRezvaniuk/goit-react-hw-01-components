@@ -1,16 +1,17 @@
+import React from 'react';
+import { ProfileApp } from 'components/profile/ProfileApp';
+// import { StatisticsApp } from 'components/statistics/StatisticsApp';
+// import { FriendsApp } from 'components/friends/FriendsApp';
+// import { TransactionsApp } from './transaction/TransactionsApp';
+// import './transaction/transition.css';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <>
+      <ProfileApp />
+      {/* <StatisticsApp />
+      <FriendsApp />
+      <TransactionsApp /> */}
+    </>
   );
 };

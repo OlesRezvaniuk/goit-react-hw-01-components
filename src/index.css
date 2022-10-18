@@ -13,3 +13,6 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+#root > div > table > tbody > tr:nth-child(even) {
+  background-color: #d8f0f7;
+}
