@@ -16,8 +16,8 @@ export const Img = styled.img`
   padding: 20px;
   box-shadow: inset 0px 0px 5px;
   border-radius: 50%;
-  width: 80%;
-  margin-top: 20px;
+  width: 50%;
+  margin-top: 40px;
 `;
 
 export const Name = styled.p`
