@@ -16,3 +16,7 @@ code {
 #root > div > table > tbody > tr:nth-child(even) {
   background-color: #d8f0f7;
 }
+
+#root > table > tbody > tr:nth-child(even) {
+  background-color: #d8f0f7;
+}
