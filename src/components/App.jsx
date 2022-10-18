@@ -4,7 +4,7 @@ import { StatisticsApp } from 'components/statistics/StatisticsApp';
 import { FriendsApp } from 'components/friends/FriendsApp';
 import { TransactionsApp } from './transaction/TransactionsApp';
 import user from '../data/user.json';
-import data from './statistics/data.json';
+import data from '../data/data.json';
 
 export const App = () => {
   return (
