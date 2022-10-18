@@ -1,6 +1,6 @@
 // import Statistics from './statistics';
 import FriendsItem from './Item/FriendsItem';
-import { List } from './Friends.styled';
+import { List } from './Friends.styled.jsx';
 
 export const Friends = ({ friendsData }) => {
   return (
