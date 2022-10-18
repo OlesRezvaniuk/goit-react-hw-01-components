@@ -11,15 +11,7 @@ import trans from '../data/transactions.json';
 export const App = () => {
   return (
     <>
-      <Profile
-        name={user.username}
-        tag={user.tag}
-        location={user.location}
-        avatar={user.avatar}
-        followers={user.stats.followers}
-        views={user.stats.views}
-        likes={user.stats.likes}
-      />
+      <Profile userData={user} />
       <Statistics statData={data} />
       <Friends friendsData={friends} />
       <Transactions transData={trans} />

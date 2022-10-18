@@ -13,9 +13,9 @@ const StatisticsItem = ({ id, label, percentage }) => {
 export default StatisticsItem;
 
 StatisticsItem.propTypes = {
-  id: PropTypes.string,
-  label: PropTypes.string,
-  percentage: PropTypes.number,
+  id: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
+  percentage: PropTypes.number.isRequired,
 };
 
 function getRandomHexColor() {
