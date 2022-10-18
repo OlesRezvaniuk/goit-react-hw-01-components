@@ -13,9 +13,9 @@ const isOnlineColor = variant => {
   }
 };
 
-const FriendsItem = ({ avatar, name, isOnline, id }) => {
+const FriendsItem = ({ avatar, name, isOnline }) => {
   return (
-    <Item id={id}>
+    <Item>
       <Status
         varint={isOnline}
         style={{ backgroundColor: isOnlineColor(isOnline) }}
@@ -32,5 +32,4 @@ FriendsItem.propTypes = {
   avatar: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   isOnline: PropTypes.bool.isRequired,
-  id: PropTypes.number.isRequired,
 };

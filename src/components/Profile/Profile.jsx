@@ -14,28 +14,28 @@ import {
   Quantity,
 } from './Profile.styled';
 
-const Profile = ({ userData }) => {
+const Profile = ({ name, tag, location, avatar, followers, views, likes }) => {
   return (
     <Card>
       <Description>
-        <Img src={userData.avatar} alt="User avatar" />
-        <Name>{userData.name}</Name>
-        <Tag>{userData.tag}</Tag>
-        <Location>{userData.location}</Location>
+        <Img src={avatar} alt="User avatar" />
+        <Name>{name}</Name>
+        <Tag>{tag}</Tag>
+        <Location>{location}</Location>
       </Description>
 
       <CardList>
         <CardItemFirst>
           <Label>Followers</Label>
-          <Quantity>{userData.followers}</Quantity>
+          <Quantity>{followers}</Quantity>
         </CardItemFirst>
         <CardItem>
           <Label>Views</Label>
-          <Quantity>{userData.views}</Quantity>
+          <Quantity>{views}</Quantity>
         </CardItem>
         <CardItemLast>
           <Label>Likes</Label>
-          <Quantity>{userData.likes}</Quantity>
+          <Quantity>{likes}</Quantity>
         </CardItemLast>
       </CardList>
     </Card>
