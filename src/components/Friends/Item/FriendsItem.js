@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import { Item, Status, Img, Name } from './friends.styled';
+import { Item, Status, Img, Name } from '../Friends.styled';
 
 const isOnlineColor = variant => {
   switch (variant) {
@@ -13,7 +13,7 @@ const isOnlineColor = variant => {
   }
 };
 
-const Friends = ({ avatar, name, isOnline, id }) => {
+const FriendsItem = ({ avatar, name, isOnline, id }) => {
   return (
     <Item id={id}>
       <Status
@@ -26,9 +26,9 @@ const Friends = ({ avatar, name, isOnline, id }) => {
   );
 };
 
-export default Friends;
+export default FriendsItem;
 
-Friends.propTypes = {
+FriendsItem.propTypes = {
   avatar: PropTypes.string,
   name: PropTypes.string,
   isOnline: PropTypes.bool,

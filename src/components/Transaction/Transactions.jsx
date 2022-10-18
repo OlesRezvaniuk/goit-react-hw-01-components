@@ -1,9 +1,8 @@
 // import Statistics from './statistics';
-import Transactions from './transactions';
-import trans from './transactions.json';
-import { Table, TableHead, TableR, TableH, TBody } from './transactions.styled';
+import TransactionsItem from './Item/TransactionsItem';
+import { Table, TableHead, TableR, TableH, TBody } from './Transactions.styled';
 
-export const TransactionsApp = () => {
+export const Transactions = ({ transData }) => {
   return (
     <Table>
       <TableHead>
@@ -15,8 +14,8 @@ export const TransactionsApp = () => {
       </TableHead>
 
       <TBody>
-        {trans.map(trans => (
-          <Transactions
+        {transData.map(trans => (
+          <TransactionsItem
             key={trans.id}
             type={trans.type}
             amount={trans.amount}

@@ -1,15 +1,15 @@
-import Statistics from './Statistics';
+import StatisticsItem from './Item/StatisticsItem';
 
-import { Box, Title, List } from './statistics.styled';
+import { Box, Title, List } from './Statistics.styled';
 
-export const StatisticsApp = ({ statData }) => {
+export const Statistics = ({ statData }) => {
   return (
     <Box>
       <Title>Upload stats</Title>
 
       <List>
         {statData.map(data => (
-          <Statistics
+          <StatisticsItem
             key={data.id}
             label={data.label}
             percentage={data.percentage}

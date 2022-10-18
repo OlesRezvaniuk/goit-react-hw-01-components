@@ -1,13 +1,12 @@
 // import Statistics from './statistics';
-import Friends from './friends';
-import friend from './friends.json';
-import { List } from './friends.styled';
+import FriendsItem from './Item/FriendsItem';
+import { List } from './Friends.styled';
 
-export const FriendsApp = () => {
+export const Friends = ({ friendsData }) => {
   return (
     <List>
-      {friend.map(friend => (
-        <Friends
+      {friendsData.map(friend => (
+        <FriendsItem
           avatar={friend.avatar}
           name={friend.name}
           isOnline={friend.isOnline}

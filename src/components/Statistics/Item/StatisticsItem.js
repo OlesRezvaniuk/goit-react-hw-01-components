@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
-import { Item, Label, Percentage } from './statistics.styled';
+import { Item, Label, Percentage } from '../Statistics.styled';
 
-const Statistics = ({ id, label, percentage }) => {
+const StatisticsItem = ({ id, label, percentage }) => {
   return (
     <Item id={id} style={{ backgroundColor: `${getRandomHexColor()}` }}>
       <Label>{label}</Label>
@@ -10,9 +10,9 @@ const Statistics = ({ id, label, percentage }) => {
   );
 };
 
-export default Statistics;
+export default StatisticsItem;
 
-Statistics.propTypes = {
+StatisticsItem.propTypes = {
   id: PropTypes.string,
   label: PropTypes.string,
   percentage: PropTypes.number,
