@@ -1,6 +1,6 @@
 // import Statistics from './statistics';
 import TransactionsItem from './Item/TransactionsItem';
-import { Table, TableHead, TableR, TableH, TBody } from './transactions.styled';
+import { Table, TableHead, TableR, TableH, TBody } from './Transactions.styled';
 
 export const Transactions = ({ transData }) => {
   return (
