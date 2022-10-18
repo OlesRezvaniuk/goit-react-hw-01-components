@@ -12,7 +12,7 @@ import {
   CardItemLast,
   Label,
   Quantity,
-} from './profile.styled';
+} from './Profile.styled';
 
 const Profile = ({ name, tag, location, avatar, followers, views, likes }) => {
   return (

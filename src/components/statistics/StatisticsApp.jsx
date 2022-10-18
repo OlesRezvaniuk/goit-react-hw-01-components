@@ -1,14 +1,14 @@
-import Statistics from './statistics';
-import data from './data.json';
+import Statistics from './Statistics';
+
 import { Box, Title, List } from './statistics.styled';
 
-export const StatisticsApp = () => {
+export const StatisticsApp = ({ statData }) => {
   return (
     <Box>
       <Title>Upload stats</Title>
 
       <List>
-        {data.map(data => (
+        {statData.map(data => (
           <Statistics
             key={data.id}
             label={data.label}
