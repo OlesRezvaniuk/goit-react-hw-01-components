@@ -1,4 +1,5 @@
 // import Statistics from './statistics';
+import PropTypes from 'prop-types';
 import TransactionsItem from './Item/TransactionsItem';
 import { Table, TableHead, TableR, TableH, TBody } from './Transactions.styled';
 
@@ -25,4 +26,12 @@ export const Transactions = ({ transData }) => {
       </TBody>
     </Table>
   );
+};
+
+TransactionsItem.propTypes = {
+  transData: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+    })
+  ),
 };
