@@ -17,7 +17,17 @@ export const Item = styled.li`
   box-shadow: 0px 0px 5px;
   border-radius: 4px;
   padding: 5px;
+
   > li {
+  }
+
+  &:nth-child(even) {
+  }
+
+  &:hover {
+  }
+
+  &__button {
   }
 `;
 
